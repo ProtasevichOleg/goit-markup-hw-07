@@ -11,17 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="index-page">
-    <header class="header">
+  <body class="page-body">
+    <header class="header page-body__header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo navigation__logo link" href="./index.html" lang="en"
@@ -57,9 +50,9 @@
         </ul>
       </div>
     </header>
-    <main class="main">
+    <main class="page-body__main">
       <!-- Ефективні рішення для вашого бізнесу -->
-      <section class="section section__hero">
+      <section class="section page-body__hero-section">
         <div class="hero">
           <div class="container">
             <h1 class="hero__title title">Ефективні рішення для вашого бізнесу</h1>
@@ -70,10 +63,10 @@
         </div>
       </section>
       <!-- Наші особливості -->
-      <section class="section section__features">
+      <section class="section page-body__features-section">
         <div class="container">
           <h2 class="visually-hidden">Наші особливості</h2>
-          <ul class="icon-cardset list">
+          <ul class="cardset icon-cardset list">
             <li class="icon-card">
               <div class="icon-card__illustration">
                 <svg width="70" height="70">
@@ -125,7 +118,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section__title title">Чим ми займаємося</h2>
-          <ul class="illustration-cardset list">
+          <ul class="cardset illustration-cardset list">
             <li class="illustration-card">
               <div class="illustration-card__thumb">
                 <img
@@ -175,7 +168,7 @@
       <section class="section section__team">
         <div class="container">
           <h2 class="section__title title">Наша команда</h2>
-          <ul class="people-cardset list">
+          <ul class="cardset people-cardset list">
             <li class="people-card">
               <img
                 src="./images/main-ourteam-img-1.jpg"
@@ -401,7 +394,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section__title title">Постійні Клієнти</h2>
-          <ul class="logo-cardset list">
+          <ul class="cardset logo-cardset list">
             <li class="logo-card">
               <a
                 href=""
@@ -482,7 +475,7 @@
       <div class="container footer__columnset">
         <div class="footer__column">
           <a class="logo footer-logo link" href="./index.html" lang="en"
-            >Web<span class="logo__accent--color-light">Studio</span></a
+            >Web<span class="logo__accent logo__accent--color-light">Studio</span></a
           >
           <address>
             <ul class="address list">
@@ -557,10 +550,8 @@
         <div class="footer__column">
           <p class="footer__title">Підпишіться на розсилку</p>
           <form class="footer__form">
-            <input type="email" name="email" class="footer__input" placeholder="E-mail" /><button
-              type="submit"
-              class="button button--icon-append"
-            >
+            <input type="email" name="email" class="footer__input" placeholder="E-mail" />
+            <button type="submit" class="button button--icon-owner">
               Підписатися<svg class="button__icon" width="24" height="24">
                 <use href="./images/icon-sprite.svg#icon-footer-send"></use>
               </svg>
@@ -570,7 +561,7 @@
       </div>
     </footer>
     <!-- MODAL -->
-    <div class="backdrop index-page__backdrop is-hidden" data-modal>
+    <div class="backdrop page-body__backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="close-button modal__close-button">
           <svg class="icon icon-close-button" width="18" height="18">
@@ -627,13 +618,21 @@
               <input
                 type="checkbox"
                 value="agreement"
-                class="agreement__checkbox-engine"
+                class="visually-hidden agreement__checkbox-engine"
                 required
               />
-              <svg class="agreement__icon--unchecked" width="16" height="15">
+              <svg
+                class="agreement__checkbox-icon agreement__checkbox-icon--unchecked"
+                width="16"
+                height="15"
+              >
                 <use href="./images/icon-sprite.svg#icon-modal-checkbox-empty"></use>
               </svg>
-              <svg class="agreement__icon--checked" width="16" height="15">
+              <svg
+                class="agreement__checkbox-icon agreement__checkbox-icon--checked"
+                width="16"
+                height="15"
+              >
                 <use href="./images/icon-sprite.svg#icon-modal-checkbox"></use>
               </svg>
               <span class="agreement__text">

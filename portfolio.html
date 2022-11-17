@@ -11,17 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="portfolio-page">
-    <header class="header">
+  <body class="page-body">
+    <header class="header page-body__header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo navigation__logo link" href="./index.html" lang="en"
@@ -57,7 +50,7 @@
         </ul>
       </div>
     </header>
-    <main class="main">
+    <main class="page-body__main">
       <!-- Портфоліо -->
       <section class="section">
         <div class="container portfolio">
@@ -79,7 +72,7 @@
               <button class="filter__btn outline-remover" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="product-cardset list">
+          <ul class="cardset product-cardset list">
             <li class="product-card">
               <a href="" class="product-card__link link outline-remover">
                 <div class="product-card__thumb">
@@ -384,7 +377,7 @@
               class="footer__input"
               id="footer-email-input"
               placeholder="E-mail"
-            /><button type="submit" class="button button--icon-append">
+            /><button type="submit" class="button button--icon-owner">
               Підписатися<svg class="button__icon" width="24" height="24">
                 <use href="./images/icon-sprite.svg#icon-footer-send"></use>
               </svg>
